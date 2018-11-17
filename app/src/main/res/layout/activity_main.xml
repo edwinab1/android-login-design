@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:background="@drawable/background"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/ariana"
+            android:alpha="0.1"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/textlogo"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/gitchgitch"
+            android:layout_marginTop="20dp"
+            android:text="@string/logo_name"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            app:iiv_color="@color/colorWhite"
+            app:iiv_icon="faw_spotify"
+            android:layout_below="@id/textlogo"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btsignup"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:text="@string/signup"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:background="@drawable/button_transparent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btlogin"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/Login"
+            android:layout_above="@id/btsignup"
+            android:textColor="@color/colorRose"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:background="@drawable/button_white"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:layout_above="@id/label"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginBottom="0dp"
+            android:text="@string/label1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:text="@string/label2"
+            android:textSize="12dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@id/btlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
